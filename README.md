@@ -1,6 +1,6 @@
 # qlpreview.yazi
 
-Preview Office documents (`.pptx`, `.docx`, `.xlsx`, `.ppt`, `.doc`, `.xls`, `.odp`, `.odt`, `.ods`) in [Yazi](https://github.com/sxyazi/yazi) using the **native macOS Quick Look engine** (`qlmanage`).
+Preview Office documents (`.pptx`, `.docx`, `.xlsx`, `.ppt`, `.doc`, `.xls`) in [Yazi](https://github.com/sxyazi/yazi) using the **native macOS Quick Look engine** (`qlmanage`).
 
 Zero dependencies beyond what ships with macOS. No LibreOffice, no `pdftoppm` — just `qlmanage`.
 
@@ -34,25 +34,19 @@ Add to `~/.config/yazi/yazi.toml`:
 prepend_preloaders = [
     { url = "*.pptx", run = "qlpreview" },
     { url = "*.ppt",  run = "qlpreview" },
-    { url = "*.odp",  run = "qlpreview" },
     { url = "*.docx", run = "qlpreview" },
     { url = "*.doc",  run = "qlpreview" },
-    { url = "*.odt",  run = "qlpreview" },
     { url = "*.xlsx", run = "qlpreview" },
     { url = "*.xls",  run = "qlpreview" },
-    { url = "*.ods",  run = "qlpreview" },
 ]
 
 prepend_previewers = [
     { url = "*.pptx", run = "qlpreview" },
     { url = "*.ppt",  run = "qlpreview" },
-    { url = "*.odp",  run = "qlpreview" },
     { url = "*.docx", run = "qlpreview" },
     { url = "*.doc",  run = "qlpreview" },
-    { url = "*.odt",  run = "qlpreview" },
     { url = "*.xlsx", run = "qlpreview" },
     { url = "*.xls",  run = "qlpreview" },
-    { url = "*.ods",  run = "qlpreview" },
 ]
 ```
 
