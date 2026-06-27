@@ -1,0 +1,12 @@
+[package]
+name = "qlpreview"
+description = "Preview Office documents in Yazi using macOS native Quick Look engine"
+type = "plugin"
+version = "1.0.0"
+yazi = ">=26.5.6"
+
+[package.authors]
+Fun10165 = "Fun10165"
+
+[package.dependencies]
+# None — uses macOS built-in qlmanage
